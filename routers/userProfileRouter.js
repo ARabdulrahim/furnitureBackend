@@ -1,4 +1,4 @@
-import { userProfileController } from "../controllers/userProfilecontroller.js";
+import {userProfileController} from '../controllers/UserProfileController.js'
 import { UploadhandleFile } from "../Utils/handlefile.js";
 import express from 'express';
 import { TokenVerify } from "../Utils/VerifyJwtToken.js";
