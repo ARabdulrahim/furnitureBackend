@@ -1,13 +1,13 @@
 import express  from "express";
-import { handleerr } from "../Utils/wrapasync.js";
 import { createListController, destroyListController, editListController, showListByIdController, showListcontroller, showListeditByIdController } from "../controllers/listcontroller.js";
 import { validatelist } from "../Utils/Validatelistschema.js";
 import { TokenVerify } from "../Utils/VerifyJwtToken.js";
 import { UploadhandleFile } from "../Utils/handlefile.js";
+import { handleerr } from "../Utils/wrapAsync.js";
 
 const router=express.Router();
 
-const createList=router.post("/new",TokenVerify,UploadhandleFile,validatelist,  handleerr(createListController));
+const createList=router.post("/new",TokenVerify,UploadhandleFile,validatelist, handleerr(createListController));
 
 const showList=router.get("/", handleerr(showListcontroller));
 
