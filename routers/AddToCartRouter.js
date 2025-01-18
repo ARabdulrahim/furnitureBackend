@@ -1,8 +1,9 @@
 import express from "express"
 import {AddtocartController, fetchAddtocart, Removeaddtocart} from "../controllers/cartController.js"
 import { TokenVerify } from "../Utils/VerifyJwtToken.js";
-import { handleerr } from "../Utils/wrapasync.js";
 import { validatelist } from "../Utils/Validatelistschema.js";
+import { handleerr } from "../Utils/wrapAsync.js";
+
 const router=express.Router();
 
 

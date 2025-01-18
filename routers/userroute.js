@@ -1,7 +1,7 @@
 import express from "express";
-import { handleerr } from "../Utils/wrapasync.js";
 import { login, signup} from "../controllers/usercontroller.js";
 import {  validateUserLogin, validateUserSignup } from "../Utils/Validatelistschema.js";
+import { handleerr } from "../Utils/wrapAsync.js";
 
 const router=express.Router();
 

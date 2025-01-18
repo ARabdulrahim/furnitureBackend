@@ -2,7 +2,8 @@ import { userProfileController } from "../controllers/userProfilecontroller.js";
 import { UploadhandleFile } from "../Utils/handlefile.js";
 import express from 'express';
 import { TokenVerify } from "../Utils/VerifyJwtToken.js";
-import { handleerr } from "../Utils/wrapasync.js";
+import { handleerr } from "../Utils/wrapAsync.js";
+
 const router=express.Router();
 
 
